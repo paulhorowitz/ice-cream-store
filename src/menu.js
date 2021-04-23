@@ -1,10 +1,16 @@
 import data from "./data";
 
+// Removes current content from page and renders the menu page
+
 function renderMenuPage(productinfo) {
     const maindiv = document.getElementById("content");
+
+    // removes current content
     while (maindiv.firstChild) {
         maindiv.removeChild(maindiv.firstChild);
     }
+
+    // render main page
     const menu = document.createElement("div")
     const h1el = document.createElement("h1");
     maindiv.appendChild(h1el);
@@ -13,11 +19,14 @@ function renderMenuPage(productinfo) {
     menu.id = "menu";
     h1el.innerHTML = "Menu";
     console.log(productinfo)
+
+    // gets product info from data.js and runs card creation function until end of array
     for (var i = 0; i < productinfo.length; i++) {
         renderMenuCard(productinfo[i]);
     }
 }
 
+// creates each card and populates with information
 function renderMenuCard(productinfo) {
     const maindiv = document.getElementById("content");
     const menu = document.getElementById("menu");
