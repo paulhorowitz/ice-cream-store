@@ -14,5 +14,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3"
-  }
+  },
+  "homepage": "https://github.com/paulhorowitz/ice-cream-store/tree/gh-pages"
 }
