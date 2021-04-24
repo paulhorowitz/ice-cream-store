@@ -1,4 +1,5 @@
 import productinfo from "./data.js";
+import 'bootstrap';
 
 const { default: renderContactPage } = require("./contact");
 const { default: renderMenuPage } = require("./menu");

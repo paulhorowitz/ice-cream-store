@@ -1,4 +1,4 @@
-import data from "./data";
+import 'bootstrap';
 
 // Removes current content from page and renders the menu page
 
